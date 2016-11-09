@@ -1,0 +1,46 @@
+# KENNETH’S TIPS
+
+# This computer is installed with: “Pry”, and many Sublime extensions such as RubyFormat, PasteWrap, and BracketHighlighter.
+
+############# Quick tips for MAC OS : ####################
+CMD + TAB -> change windows
+
+CMD + left/right arrow key -> change windows, within an app
+
+CMD + SPACEBAR => Spotlight: Quick-search computer
+
+CMD + CTRL + F => Fullscreen (not with shift, is different :D)
+
+CMD + M (+ OPTION, for all windows of that app)=> Minimize window
+
+CMD + F1 => mirrors the monitors on/off
+
+############# SUBLIME ################
+CTRL + SHIFT + up/down arrow (multiple cursors along lines)
+CMD + CTRL + arrow (shift line around)
+CMD + SHIFT + SPACE => GRAB WITHIN SCOPE
+CMD + SHIFT + D -> duplicate line
+############ Comment Blocks #############
+<<-REPORT_NAME.gsub(/^ {4}/, '')
+REPORT_NAME
+
+puts <<-LINK.gsub(/^ {0}/, '') # the Gsub number indents by that much (code formatted)
+       HELLO THERE
+       howdy
+	LINK     
+
+############## PRY
+http://yorickpeterse.com/articles/debugging-with-pry/
+   ruby -r pry file.rb
+   Put binding.pry where you want a breakpoint.
+   Moving out of the "breakpoint" (or moving to the next one if you have multiple ones defined) can be done by hitting ^D (Ctrl+D usually).
+ 
+   A nice thing about starting Pry this way is that it starts in the context of the call to binding.pry meaning you get access to data such as the local variables. These can be displayed by calling ls or by simply typing their name.
+
+### Open Terminal at Folder Icon
+http://stackoverflow.com/questions/420456/open-terminal-here-in-mac-os-finder
+	System Preferences > Keyboard > Shortcuts > Services
+Enable New Terminal at Folder. There's also New Terminal Tab at Folder, which will create a tab in the frontmost Terminal window (if any, else it will create a new window). These Services work in all applications, not just Finder, and they operate on folders as well as absolute pathnames selected in text.
+	The New Terminal at Folder service will become active when you select a folder in Finder. You cannot simply have the folder open and run the service "in place".
+
+###
