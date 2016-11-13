@@ -17,3 +17,9 @@ POST: create a new resource. POST requests usually carry a payload that specifie
 PUT: update an existing resource. The payload may contain the updated data for the resource.
 
 DELETE: delete an existing resource.
+
+=====================
+
+||| SINATRA |||
+Code is executed from top-to-bottom within the .rb file!
+Restart server when config is changed.
