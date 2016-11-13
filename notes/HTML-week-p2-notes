@@ -1,0 +1,19 @@
+HTML 
+
+GET => recieve information
+PUT | PATCH => edit
+PUT => FULLY replaces
+DELETE => delete record
+PATCH => smaller replacement
+
+(most browsers only use GET/POST)
+POST: generally used for update/adding/delete records
+
+
+GET: fetch an existing resource. The URL contains all the necessary information the server needs to locate and return the resource.
+
+POST: create a new resource. POST requests usually carry a payload that specifies the data for the new resource.
+
+PUT: update an existing resource. The payload may contain the updated data for the resource.
+
+DELETE: delete an existing resource.
