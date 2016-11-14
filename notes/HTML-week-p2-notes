@@ -22,4 +22,8 @@ DELETE: delete an existing resource.
 
 ||| SINATRA |||
 Code is executed from top-to-bottom within the .rb file!
-Restart server when config is changed.
+Restart server when config is changed, or use gem (windows): http://www.sinatrarb.com/contrib/reloader.html [gem install sinatra-contrib]
+
+
+Setting @ice_cream_cones in this block means we can access @ice_cream_cones in about.erb. Instance variables set in a block can be accessed in a view rendered using the erb method within than block. 
+erb is a method that is most commonly called with a symbol (:about in this case). It executes ruby code contained in special tags.
