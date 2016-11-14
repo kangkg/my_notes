@@ -1,0 +1,68 @@
+
+# KEN's .gitconfig-urino
+[user]
+	email = kenneth.g.kang@vanderbilt.edu
+	name = Kenneth G. Kang
+
+[alias]
+  add-commit  =       !git add -A && git commit
+  ac          =       !git add -A && git commit -m                           # add a message.
+  la          =       !cat ~/.gitconfig                                      # lists aliases
+  las         =       !cat ~/.bash_profile                                   # lists non-git-aliases
+  law         =       !cd ~ && subl .gitconfig                               # edit this gitconfig file
+  laww         =      !cd ~ && subl .bash_profile                            # edit bash profile
+
+  pu          =       !git status && git push -u origin HEAD                 # push current branch
+  fe          =       !git fetch origin && git diff master origin/master     # check diff between origin and master
+
+# fundamentals:
+  co          =       checkout
+  cob         =       checkout -b                                            # to make a new branch, and switch to it.
+  com         =       checkout master
+  br          =       branch
+  st          =       status
+  ci          =       commit
+  laz         =       "!grep '\t=' .gitconfig | less"                        # in case this file gets too long
+
+# Extra Aliases:
+  diffy       =       diff --stat --color master..HEAD                       # condensed file-diffs between master and HEAD(red = missing)
+
+# Git log aliases:
+
+# For colorful 'git log' (shows all commits) #can be modified as "ls -p" to show all changes too.
+  ls          =       log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(dim green)<%an>%Creset' --abbrev-commit
+
+# This is changed-commits (List commits showing changed files and how many added/deleted lines.)
+  lsl         =       log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cgreen\\ [%cn]" --decorate --numstat  
+
+# This show last file's committed changes.
+  lu          =       log -u
+
+# ####### Notes for writing to this .gitconfig file: ######
+# Use ! for non-git Commands.
+
+
+
+# ################# Notes #################
+# git log -p -a_number     will show the last # commit file diffs. 
+# Working tree -> staged area(AKA index) -> HEAD (last commit on branch)
+
+# git diff  #Shows the changes between the working directory and the index. This shows what has been changed, but *is not staged* for a commit.
+
+# git diff HEAD #Shows all the changes between the working directory and HEAD (which includes changes in the index). This shows all the changes since the last commit, whether or not they have been staged for commit or not.
+
+# git diff --cached #Shows the changes between the index and the HEAD(which is the last commit on this branch). This shows what has been added to the index and staged for a commit.
+
+# With .. and ... in git log, it will show differences on one branch (..) and ALL differences in branches
+
+# git checkout -p    lets you selectively revert chunks since last commit. 
+# you can hold ENTER to continue the pager for "git log" and such. "q" is to quit the pager.
+# git branch <branch-name> and git checkout -b <branch-name> both create a branch but checkout switches to the new branch
+
+# git pull origin master  #will pull changes from the origin remote, master branch and merge them to the local checked-out branch.
+# ################# Git Tips ################# http://mislav.net/2010/07/git-tips/ ##########
+# git diff --word-diff  #this will highlight diffs, on the same line instead of different ones.
+# git status -sb        #short status output.
+# http://stackoverflow.com/questions/7066325/list-git-aliases
+# git reset --soft HEAD~1 to remove last commit
+# ################# End File #################
