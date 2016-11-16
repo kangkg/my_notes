@@ -41,3 +41,5 @@ end
 
 
 
+////////////
+We can tell Sinatra to interpret a POST request as a PUT or DELETE request. We do this by sending a parameter named _method along with the other data. We set the value of this parameter to the name of one of the browser-unsupported request types (i.e., PUT or DELETE). This can be done in a form by adding a hidden input (see Figure 2).
