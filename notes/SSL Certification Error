@@ -5,3 +5,7 @@ Just paste into console (in /c/ where rubygem is installed):
 gem install --local C:\rubygems-update-2.6.7.gem
 update_rubygems --no-ri --no-rdoc
 gem uninstall rubygems-update -x
+
+//// CA CERTIFICATIONS ///
+Solution #2: https://gist.github.com/eyecatchup/20a494dff3094059d71d
+C:\RailsInstaller\Ruby2.2.0\lib\ruby\2.2.0\rubygems\ssl_certs
