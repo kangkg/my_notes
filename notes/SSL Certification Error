@@ -1,0 +1,7 @@
+http://guides.rubygems.org/ssl-certificate-update/
+
+Just paste into console (in /c/ where rubygem is installed):
+
+gem install --local C:\rubygems-update-2.6.7.gem
+update_rubygems --no-ri --no-rdoc
+gem uninstall rubygems-update -x
