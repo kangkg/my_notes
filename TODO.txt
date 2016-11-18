@@ -1,0 +1,3 @@
+.bashsrc file needs to be uploaded
+
+symlinks?
