@@ -6,3 +6,9 @@ http://stackoverflow.com/questions/7695962/postgresql-password-authentication-fa
 
 2. "This was frustrating, most of the above answers are correct but they fail to mention you have to restart the database service before the changes in the pg_hba.conf file will take affect."
 sudo service postgresql restart
+
+
+
+ "CTRL + h" to show hidden files
+ sudo -> admin
+ sudo nautilus -> admin folder
