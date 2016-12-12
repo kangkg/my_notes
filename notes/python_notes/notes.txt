@@ -1,0 +1,2 @@
+Note that unlike many popular programming languages, Python uses whitespace indentation as a delimiter for code blocks, instead of the traditional curly braces or keywords. 
+This allows Python to have extremely readable code, and forces you not to write single-line functions. Keep this in mind as you are writing your own program, as you don’t want to have issues caused by missing line breaks or indentation.
